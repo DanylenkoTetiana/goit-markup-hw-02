@@ -1,6 +1,7 @@
 body {
     font-family: Roboto, sans-serif;
     color: #212121;
+    background-color: #FFFFFF;
 }
 /*Шапка*/
 .header {
@@ -75,7 +76,7 @@ body {
 .activity {
     background-color: #F5F5F5;
 }
-.benefits-title {
+.hidden {
     color: transparent;
 }
 .benefits-item-title {
@@ -134,4 +135,38 @@ color: #757575;
 }
 .footer span {
     color: #FFFFFF;
+}
+/*Проєкти*/
+.projects {
+   
+}
+.category-button {
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+.category-button:hover,
+.category-button:focus {
+    background: #2196F3;
+    color: #FFFFFF;
+}
+
+.category-button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.project {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.projects-category {
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
