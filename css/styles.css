@@ -1,12 +1,15 @@
 body {
     font-family: Roboto, sans-serif;
-    color: #212121; 
+    color: #212121;
 }
 /*Шапка*/
 .header {
+    background-color: #FFFFFF;
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    }
+    line-height: 1.14
+  }
 
 .logo {
     font-family: 'Raleway';
@@ -22,20 +25,113 @@ body {
 .logo:focus {
     text-decoration: underline #2196F3;
 }
-.nav-list-link {
-    color: #212121;
-}
 
-.nav-list-link:hover,
-.nav-list-link:focus,
-.header-list-link:hover,
-.header-list-link:focus {
+.nav-link:hover,
+.nav-link:focus,
+.header-link:hover,
+.header-link:focus,
+.address-link:hover,
+.address-mail:hover,
+.address-tel:hover,
+.address-link:focus,
+.address-mail:focus,
+.address-tel:focus {
     color: #2196F3;
 }
-.nav-list-link,
-.header-list-link {
+.nav-link,
+.header-link {
     text-decoration: none;
 }
-.header-list-link {
+.nav-link {
+    color: #212121;
+}
+.header-link {
     color: #757575;
+}
+/*Герой*/
+
+.box {
+    background-color: #2F303A;
+}
+.box-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.box-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+/*Переваги компанії*/
+
+.benefits,
+.activity {
+    background-color: #F5F5F5;
+}
+.benefits-title {
+    color: transparent;
+}
+.benefits-item-title {
+    font-style: normal;
+    font-size: 14;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.benefit {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+}
+
+/*Чим займається компанія*/
+
+.title {
+font-style: normal;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+/*Команда*/
+
+.team {
+    background-color: #F5F4FA;
+}
+.team-employee {
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+}
+.team-position {
+color: #757575;
+}
+
+/*Футер*/
+
+.footer {
+    background-color: #2F303A;
+}
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+}
+.address-tel,
+.address-mail {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.address-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer span {
+    color: #FFFFFF;
 }
