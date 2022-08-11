@@ -1,0 +1,41 @@
+body {
+    font-family: Roboto, sans-serif;
+    color: #212121; 
+}
+/*Шапка*/
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    }
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    color: #2196F3;
+    text-decoration: none;
+}
+.logo span {
+    color: #000000;
+}
+.logo:hover,
+.logo:focus {
+    text-decoration: underline #2196F3;
+}
+.nav-list-link {
+    color: #212121;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.header-list-link:hover,
+.header-list-link:focus {
+    color: #2196F3;
+}
+.nav-list-link,
+.header-list-link {
+    text-decoration: none;
+}
+.header-list-link {
+    color: #757575;
+}
