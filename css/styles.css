@@ -1,22 +1,37 @@
-body {
-    font-family: Roboto, sans-serif;
-    color: #212121;
-    background-color: #FFFFFF;
+:root {
+    --praimery-text-color:#757575;
+    --secondary-text-color: #FFFFFF;
+    --titel-text-color: #212121;
+    --accent-color: #2196F3;
+    --praimery-bkg-color: FFFFFF;
+    --secondary-bkg-color: #2F303A;
 }
+body {
+    font-family: Roboto, Verdana, Tahoma, sans-serif;
+    color: var(--praimery-text-color);
+    background-color: var(--praimery-bkg-color);
+}
+
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
 /*Шапка*/
 .header {
-    background-color: #FFFFFF;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14
+    line-height: 1.14;
   }
 
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    color: #2196F3;
+    color: var(--accent-color);
     text-decoration: none;
 }
 .logo span {
@@ -24,80 +39,66 @@ body {
 }
 .logo:hover,
 .logo:focus {
-    text-decoration: underline #2196F3;
+    text-decoration: underline var(--accent-color);
+}
+.nav-list .link {
+    color: var(--titel-text-color);
+}
+.header-list .link {
+    color: var(--praimery-text-color);
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.header-link:hover,
-.header-link:focus,
-.address-link:hover,
-.address-mail:hover,
-.address-tel:hover,
-.address-link:focus,
-.address-mail:focus,
-.address-tel:focus {
-    color: #2196F3;
-}
-.nav-link,
-.header-link {
-    text-decoration: none;
-}
-.nav-link {
-    color: #212121;
-}
-.header-link {
-    color: #757575;
-}
 /*Герой*/
 
-.box {
-    background-color: #2F303A;
+.hero {
+    background-color: var(--secondary-bkg-color);
 }
-.box-title {
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 }
-.box-button {
+.hero-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--titel-text-color);
 }
 /*Переваги компанії*/
 
-.benefits,
-.activity {
-    background-color: #F5F5F5;
-}
 .hidden {
     color: transparent;
 }
-.benefits-item-title {
+.benefits-title {
     font-style: normal;
     font-size: 14;
     line-height: 1.14;
     text-transform: uppercase;
+    color: var(--titel-text-color);
 }
 .benefit {
     font-size: 14px;
     line-height: 1.71;
-    color: #757575;
 }
 
 /*Чим займається компанія*/
 
 .title {
-font-style: normal;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--titel-text-color);
 }
 /*Команда*/
 
@@ -105,18 +106,17 @@ text-align: center;
     background-color: #F5F4FA;
 }
 .team-employee {
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color:  var(--titel-text-color);
 }
-.team-position {
-color: #757575;
-}
+
 
 /*Футер*/
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--secondary-bkg-color);
 }
 .address {
     font-style: normal;
@@ -124,49 +124,50 @@ color: #757575;
     font-size: 14px;
     line-height: 1.17;
 }
-.address-tel,
-.address-mail {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+.address-list .link {
+    color: rgba(255, 255, 255, 0.6) ;
 }
-.address-link {
-    color: #FFFFFF;
-    text-decoration: none;
+.link[rel="noopener noreferrer"] {
+    color: var(--secondary-text-color);
 }
 .footer span {
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
+}
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
 }
 /*Проєкти*/
 .projects {
    
 }
 .category-button {
-    background: #F5F4FA;
-    border-radius: 4px;
-}
-.category-button:hover,
-.category-button:focus {
-    background: #2196F3;
-    color: #FFFFFF;
-}
-
-.category-button {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    color: #212121;
+    border-radius: 4px;
+    cursor: pointer;
+    color:var(--titel-text-color);
+    background: #F5F4FA;
+}
+.category-button:hover,
+.category-button:focus {
+    background: var(--accent-color);
+    color: var(--secondary-text-color);
 }
 .project {
     font-style: normal;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--titel-text-color);
 }
 .projects-category {
     font-style: normal;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+
 }
+
